@@ -256,7 +256,6 @@ class AddonInfoExtractor {
         $variable = $info['Variable'];
 
         $addon = array_merge(['AddonKey' => $key, 'AddonTypeID' => ''], $info);
-        $addon['License']='MIT';
         switch ($variable) {
             case 'ApplicationInfo':
                 $addon['AddonTypeID'] = ADDON_TYPE_APPLICATION;
@@ -270,7 +269,7 @@ class AddonInfoExtractor {
             case 'ThemeInfo':
                 $addon['AddonTypeID'] = ADDON_TYPE_THEME;
                 break;
-            default:
+            case 'AddonInfo':
                 $addon['AddonTypeID'] = ADDON_TYPE_GENERAL;
                 break;
         }
