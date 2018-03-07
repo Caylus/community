@@ -1,0 +1,18 @@
+{
+    "description": "The addon management tool for VanillaForums.org.",
+    "version": "1.5.2",
+    "setupController": "setup",
+    "url": "https://open.vanillaforums.com",
+    "license": "GNU GPL v2",
+    "key": "Addons",
+    "type": "addon",
+    "priority": 10,
+    "name": "Addons Directory",
+    "authors": [
+        {
+            "name": "Vanilla Community",
+            "email": "support@vanillaforums.com",
+            "homepage": "https://open.vanillaforums.com"
+        }
+    ]
+}
