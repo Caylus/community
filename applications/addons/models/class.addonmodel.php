@@ -520,7 +520,7 @@ class AddonModel extends Gdn_Model {
         if (!isset($Addon)) {
             if (isset($Path)) {
                 try {
-                    $Addon = UpdateModel::analyzeAddon($Path, false);
+                    $Addon = AddonInfoExtractor::analyzeAddon($Path, false);
                 } catch (Exception $Ex) {
                     $Addon = false;
                     $this->Validation->addValidationResult('File', '@'.$Ex->getMessage());
