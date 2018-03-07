@@ -26,6 +26,7 @@ $SQL->replace('AddonType', array('Label' => 'Theme', 'Visible' => '1'), array('A
 $SQL->replace('AddonType', array('Label' => 'Style', 'Visible' => '0'), array('AddonTypeID' => 3), true);
 $SQL->replace('AddonType', array('Label' => 'Locale', 'Visible' => '1'), array('AddonTypeID' => 4), true);
 $SQL->replace('AddonType', array('Label' => 'Application', 'Visible' => '1'), array('AddonTypeID' => 5), true);
+$SQL->replace('AddonType', array('Label' => 'General', 'Visible' => '1'), array('AddonTypeID' => 6), true);
 $SQL->replace('AddonType', array('Label' => 'Core', 'Visible' => '1'), array('AddonTypeID' => 10), true);
 
 $Construct->table('Addon');
