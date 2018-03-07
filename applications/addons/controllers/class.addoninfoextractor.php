@@ -1,6 +1,6 @@
 <?php
 
-if (!defined(ADDON_TYPE_GENERAL)) {
+if (!defined("ADDON_TYPE_GENERAL")) {
     define("ADDON_TYPE_GENERAL",6);
 }
 
