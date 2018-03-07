@@ -68,7 +68,7 @@ if ($this->deliveryType() == DELIVERY_TYPE_ALL) {
                     ?>
 
                     <dt>Author</dt>
-                    <dd><?php echo htmlspecialchars($author); ?></dd>
+                    <dd><?php echo $author; ?></dd>
 
                     <dt>Version</dt>
                     <dd><?php echo htmlspecialchars($this->data('Version'));
