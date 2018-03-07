@@ -283,7 +283,7 @@ class AddonController extends AddonsController {
         );
 
         try {
-            $FileAddonData = UpdateModel::analyzeAddon($Path);
+            $FileAddonData = AddonInfoExtractor::analyzeAddon($Path);
             if ($FileAddonData) {
                 $AddonData = array_merge(
                     $AddonData,
@@ -318,7 +318,7 @@ class AddonController extends AddonsController {
                     array('AddonVersionID', 'Version', 'AddonKey', 'Name', 'MD5', 'FileSize', 'Checked')
                 );
 
-                $FileVersionData = UpdateModel::analyzeAddon($Path);
+                $FileVersionData = AddonInfoExtractor::analyzeAddon($Path);
                 $FileVersionData = arrayTranslate(
                     $FileVersionData,
                     array(
@@ -475,7 +475,7 @@ class AddonController extends AddonsController {
                 throw new Exception("We couldn't save the file you uploaded. Please try again later.", 400);
             }
 
-            $AnalyzedAddon = UpdateModel::analyzeAddon($TargetPath, true);
+            $AnalyzedAddon = AddonInfoExtractor::analyzeAddon($TargetPath, true);
 
             // If the long description is blank, load up the readme if it exists
             $formDescription = $this->Form->getFormValue('Description2', '');
