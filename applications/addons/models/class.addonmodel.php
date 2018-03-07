@@ -19,7 +19,8 @@ class AddonModel extends Gdn_Model {
         'theme' => ADDON_TYPE_THEME,
         'locale' => ADDON_TYPE_LOCALE,
         'application' => ADDON_TYPE_APPLICATION,
-        'core' => ADDON_TYPE_CORE
+        'core' => ADDON_TYPE_CORE,
+        'general' => ADDON_TYPE_GENERAL
     );
 
     /** @var array  */
