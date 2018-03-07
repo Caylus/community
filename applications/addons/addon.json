@@ -4,7 +4,7 @@
     "setupController": "setup",
     "url": "https://open.vanillaforums.com",
     "license": "GNU GPL v2",
-    "key": "Addons",
+    "key": "addons",
     "type": "addon",
     "priority": 10,
     "name": "Addons Directory",
